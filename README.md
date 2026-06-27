@@ -67,8 +67,8 @@ github_agent          dork_agent           alias_agent
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/herjflorez/Proyecto-OSINT---Hernando-Florez.git
-cd Proyecto-OSINT---Hernando-Florez
+git clone https://github.com/herjflorez/Proyecto-OSINT-Passive-IA.git
+cd Proyecto-OSINT-Passive-IA
 ```
 
 ### 2. Crear y activar el entorno virtual
