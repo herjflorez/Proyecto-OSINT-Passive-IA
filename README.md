@@ -10,9 +10,10 @@ Sistema de inteligencia de fuentes abiertas (OSINT) multi-agente, construido con
 - **LLM gratuito** via Groq — modelo `llama-3.3-70b-versatile`, sin coste
 - **Dos interfaces**: app web con Streamlit y CLI con Rich
 - **Streaming en tiempo real**: la UI muestra el progreso agente por agente
+- **Exportación de reportes en PDF** — generados con xhtml2pdf (motor Python puro, sin dependencias nativas)
 - **Deduplicación automática** de emails y URLs (limpia parámetros de tracking)
 - **Backoff exponencial** en peticiones HTTP — reintentos ante rate limits y timeouts
-- **127 tests** con pytest-asyncio
+- **143 tests** con pytest-asyncio
 
 ---
 
@@ -151,7 +152,8 @@ Introduce el objetivo cuando se solicite. Los resultados se muestran con tablas 
 │   ├── app.py               # Interfaz web Streamlit
 │   └── cli.py               # Interfaz CLI con Rich
 ├── utils/
-│   └── cache.py             # Cache async con diskcache
+│   ├── cache.py             # Cache async con diskcache
+│   └── pdf_generator.py     # Exportacion de reporte PDF (xhtml2pdf) con fallback HTML
 ├── tests/                   # 127 tests con pytest-asyncio
 ├── main.py                  # Punto de entrada CLI
 ├── requirements.txt

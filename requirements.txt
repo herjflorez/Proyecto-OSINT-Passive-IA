@@ -6,6 +6,7 @@ ddgs
 diskcache
 rich
 streamlit
+xhtml2pdf
 pytest
 pytest-asyncio
 python-dotenv
