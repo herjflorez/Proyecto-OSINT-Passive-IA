@@ -1,0 +1,11 @@
+langgraph
+langchain-groq
+httpx
+beautifulsoup4
+ddgs
+diskcache
+rich
+streamlit
+pytest
+pytest-asyncio
+python-dotenv
